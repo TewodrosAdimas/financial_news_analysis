@@ -69,8 +69,6 @@ Explore the Results
 
 Open each notebook and follow the instructions to explore the analysis and results.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgments
 NLTK: For natural language processing.
