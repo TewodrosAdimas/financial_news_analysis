@@ -1,76 +1,114 @@
-News Dataset Analysis Projects
-This repository contains Jupyter Notebooks for analyzing a news dataset, focusing on different aspects of the data, including descriptive statistics, publisher analysis, text analysis, and time series analysis.
+Here’s a sample `README.md` for your project:
 
-Notebooks
-1. Descriptive Statistics Analysis (descriptive_statistics.ipynb)
-This notebook performs a basic analysis of the news dataset, including:
+```markdown
+# Financial Data Analysis Project
 
-Read Data: Loads the dataset and prints the first few lines.
-Textual Length Statistics: Obtains basic statistics for headline lengths.
-Publisher Count: Counts the number of articles per publisher and views the results as a DataFrame.
-Publication Date Analysis: Analyzes publication dates to observe trends over time.
-2. Publisher Analysis (publisher_analysise.ipynb)
-This notebook provides a detailed analysis of publishers, including:
+This repository contains code and documentation for a project that involves financial data analysis, sentiment analysis, and correlation analysis between news headlines and stock movements.
 
-Publisher Contribution: Observes each publisher’s contribution to the dataset.
-News Classification: Classifies news types based on predefined keywords.
-Top 20 Publishers: Identifies the top 20 publishers and examines the effect of news categories on their publications.
-Visualization: Visualizes the number of publications by category and publisher.
-3. Text Analysis (text_analysise.ipynb)
-This notebook focuses on the semantic analysis of headlines, including:
+## Table of Contents
 
-Semantic Analysis: Uses NLTK to perform sentiment analysis on headlines.
-Common Words Identification: Identifies and analyzes common words in headlines.
-4. Time Series Analysis (time_series_analysise.ipynb)
-This notebook examines the effect of time on the number of publications, including:
+1. [Introduction](#introduction)
+2. [Project Structure](#project-structure)
+3. [Task 1: Git and GitHub](#task-1-git-and-github)
+4. [Task 2: Quantitative Analysis Using PyNance and TA-Lib](#task-2-quantitative-analysis-using-pynance-and-talib)
+5. [Task 3: Correlation Between News and Stock Movement](#task-3-correlation-between-news-and-stock-movement)
+6. [Setup and Installation](#setup-and-installation)
+7. [Usage](#usage)
+8. [Contributing](#contributing)
+9. [License](#license)
 
-Time Series Visualization: Visualizes the time series data of publication counts.
-Publication Timing Analysis: Identifies specific times when the most news is released.
-Getting Started
-Clone the Repository
+## Introduction
 
-bash
-Copy code
-git clone https://github.com/TewodrosAdimas/financial_news_analysis.git
-cd news-dataset-analysis
-Install Dependencies
+This project focuses on analyzing financial data, including stock prices and news headlines. The goal is to explore various aspects of the data, including technical indicators, sentiment analysis, and correlations between news and stock price movements.
 
-Ensure you have the required Python libraries installed. You can install them using pip or conda. Here’s a sample requirements.txt for pip:
+## Project Structure
 
-text
-Copy code
-pandas
-matplotlib
-nltk
-scikit-learn
-Install dependencies with pip:
+The repository has the following structure:
 
-bash
-Copy code
-pip install -r requirements.txt
-Or with conda:
+```
+├── .vscode/
+│   └── settings.json
+├── .github/
+│   └── workflows
+│       ├── unittests.yml
+├── .gitignore
+├── requirements.txt
+├── README.md
+├── src/
+│   ├── __init__.py
+├── notebooks/
+│   ├── __init__.py
+│   └── README.md
+├── tests/
+│   ├── __init__.py
+└── scripts/
+    ├── __init__.py
+    └── README.md
+```
 
-bash
-Copy code
-conda install --file requirements.txt
-Run the Notebooks
+## Task 1: Git and GitHub
 
-You can run the Jupyter Notebooks using Jupyter Lab or Jupyter Notebook:
+**Tasks:**
+- Setting up the Python environment
+- Git version control
+- CI/CD
 
-bash
-Copy code
-jupyter lab
-Or:
+**Overview:**
+- Create a GitHub repository and initialize the project.
+- Create branches for each task and commit changes regularly.
+- Perform Exploratory Data Analysis (EDA) on news and stock data, including descriptive statistics, text analysis, time series analysis, and publisher analysis.
 
-bash
-Copy code
-jupyter notebook
-Explore the Results
+## Task 2: Quantitative Analysis Using PyNance and TA-Lib
 
-Open each notebook and follow the instructions to explore the analysis and results.
+**Tasks:**
+- Load and prepare stock price data.
+- Apply technical analysis indicators using TA-Lib.
+- Use PyNance for financial metrics.
+- Visualize the data to understand the impact of different indicators on stock prices.
 
+**Overview:**
+- Merge branches from Task 1 into the main branch.
+- Create a new branch for Task 2 and commit changes.
+- Calculate and visualize basic technical indicators.
 
-Acknowledgments
-NLTK: For natural language processing.
-Pandas: For data manipulation and analysis.
-Matplotlib: For data visualization.
+## Task 3: Correlation Between News and Stock Movement
+
+**Tasks:**
+- Ensure datasets (news and stock prices) are aligned by dates.
+- Conduct sentiment analysis on news headlines using libraries like NLTK and TextBlob.
+- Calculate daily stock returns and analyze correlation between news sentiment and stock returns.
+
+**Overview:**
+- Merge branches from Task 2 into the main branch.
+- Create a new branch for Task 3 and commit changes.
+- Normalize dates, perform sentiment analysis, compute daily returns, and analyze correlation.
+
+## Setup and Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd your-repo
+   ```
+
+3. Create a virtual environment and activate it:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+- Navigate to the `notebooks` directory to run Jupyter notebooks for exploratory analysis.
+- Use scripts in the `scripts` directory to run analyses and calculations.
+- Tests can be found in the `tests` directory and are run using standard testing frameworks.
+
